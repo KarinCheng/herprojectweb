@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'nexa';
+    src: url(font/NexaBold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+*{
+    font-family: nexa;
+    font-weight: 100;
+    margin: 0
+}
+
+nav {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+        margin: 0 1em 0 0;
+    }
+
+nav ul:last-child li:last-child {
+    margin-left: auto;
+}
+
+ul {
+    background: rgba(0,0,0,0.35);
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+}
+
+nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+
+ul:first-child {
+    background: white;
+    justify-content: space-between;
+}
+
+nav ul:first-child li:first-child img:hover::after {
+    content: url(img/HomeHover.png);
+}
+
+body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+}
+
+/*Search button*/
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 2.6em;
+    width: 9em;
+    font-size: 1em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: #8397ae solid 1px;
+    padding: 0 0 0 1em;
+    color: #666;
+}
+
+input:hover {
+    border: #1f1799 solid 1px;
+}
+
+input:focus {
+    border: #1f1799 solid 1px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    height: 4em;
+    width: 6em;
+    background: #1f1799;
+}
+
+.button:hover {
+    background: #5847b1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Reactie verhaal*/
+.bgReaction {
+    background: white;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    margin: 2em 0 3em 0;
+    padding: 0 0 -6em 0;
+    text-shadow:  0 1px 0 #ccc,
+               0 2px 0 #666,
+               0 2px 20px rgba(0,0,0,.15);
+}
+
+.postReaction {
+    position: absolute;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    padding: 0 0 0 2em;
+}
+
+.textReaction {
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+
+.postReaction input:nth-child(3) {
+    width: 5em;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    background: #1f1799;
+    padding: 0;
+}
+
+.postReaction input:nth-child(3):hover {
+    background: #5847b1;
+}
+
+.bgReaction div {
+    transition: all 0.2s;
+    margin: -2em 0;
+}
+
+.bgReaction h2 {
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+    padding: 0;
+    font-size: 1.4em
+}
+
+.reaction header p {
+    position: absolute;
+    margin: -5em 0 0 18.3em;
+    color: #666;
+}
+
+.comment:nth-child(2){
+    position: absolute;
+    margin: -8.5em 6em;
+    width: 16em;
+}
+
+.profilePic {
+    border-radius: 8em;
+    margin: 0.5em
+}
+
+.reaction {
+    border: none;
+    position: relative;
+    margin: 2em 2em 0;
+}
+
+.reaction p {
+    width: 15em;
+}
+
+.comment {
+    position: absolute;
+}
+
+.comment h2 {
+    color: #67d082;
+    margin: 2.5em 0 0 0;
+}
+
+/*Post Micro Interaction*/
+.bgReaction div.allReaction {
+    padding-top: 6em;
+}
+
+/*Footer*/
+footer {
+    background: #f0f0f0;
+    padding: 1.5em 1.5em 1em 2em;
+    margin-top: 3em;
+}
+
+footer ul {
+    display: contents;
+}
+
+footer li:last-child {
+    margin: 0 0 1em;
+}
+
+footer a {
+    font-size: 0.7em;
+    color: #666;
+}
+
+footer a:hover {
+    color: #ec486a;
+}
+
+/*Major breakpoint 1 */
+@media (min-width: 36em) {
+    body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+    background-size: 100%;
+    }
+
+    .bgReaction div {
+        margin-left: 5em;
+    }
+
+    .postReaction {
+        padding-left: 7em;
+    }
+
+    .reaction p {
+        width: 25em
+    }
+
+    .reaction header p {
+        margin-left: 27em;
+    }
+}
+

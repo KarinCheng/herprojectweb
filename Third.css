@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'nexa';
+    src: url(font/NexaBold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+*{
+    font-family: nexa;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+}
+
+/*Navigation*/
+nav {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+        margin: 0 1em 0 0;
+    }
+
+nav ul:last-child li:last-child {
+    margin-left: auto;
+}
+
+ul {
+    background: rgba(0,0,0,0.35);
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+}
+
+nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+
+ul:first-child {
+    background: white;
+    justify-content: space-between;
+}
+
+nav ul:first-child li:first-child img:hover {
+    content: url(img/HomeHover.png);
+}
+
+nav ul:first-child li:nth-child(3) img:hover {
+    content: url(img/LoginHover.png);
+}
+
+nav ul:last-child li:first-child img:hover {
+    content: url(img/FavorietHover.png);
+}
+
+nav ul:last-child li:nth-child(2) img:hover {
+    content: url(img/RecentHover.png);
+}
+
+nav ul:last-child li:nth-child(3) img:hover {
+    content: url(img/DownloadHover.png);
+}
+
+/*Search button*/
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 2.6em;
+    width: 9em;
+    font-size: 1em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: #8397ae solid 1px;
+    padding: 0 0 0 1em;
+    color: #666;
+}
+
+input:hover {
+    border: #1f1799 solid 1px;
+}
+
+input:focus {
+    border: #1f1799 solid 1px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    height: 4em;
+    width: 6em;
+    background: #1f1799;
+}
+
+.button:hover {
+    background: #5847b1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Download*/
+main {
+    background: #f1e5da;
+    margin: 2em 0 0 0;
+    padding-bottom: 1em;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    margin: 2em 0;
+    padding: 0 0 -6em 0;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #666,
+               0 2px 20px rgba(0,0,0,.15);
+}
+
+.buttons {
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main button {
+    width: 8em;
+    height: 2em;
+    font-size: 1.1em;
+    background: #1f1799;
+    border-radius: 5em;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons button:last-child {
+    background: #e8e5f4;
+    color: #1f1799;
+}
+
+.buttons button:last-child:hover {
+    color: #ec486a;
+}
+
+section {
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 0.5em;
+    margin: 0 3em 2em;
+    padding: 1em;
+}
+
+main img {
+    border-radius: 0.5em;
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #1f1799;
+    text-align: left;
+    margin: -0.5em 0 -0.7em 0.3em;
+    padding-top: 1em;
+}
+
+.allDownloads {
+    margin: 0;
+}
+
+main p {
+    color: #666;
+    padding: 0.5em;
+    line-height: 1.2em;
+}
+
+/*Footer*/
+footer {
+    background: #f0f0f0;
+    padding: 1.5em 1.5em 1em 2em;
+}
+
+footer ul {
+    display: contents;
+}
+
+footer li:last-child {
+    margin: 0 0 1em;
+}
+
+footer a {
+    font-size: 0.7em;
+    color: #666;
+}
+
+footer a:hover {
+    color: #ec486a;
+}
+
+/*Major breakpoint 1 */
+@media (min-width: 54em) {
+    .allDownloads {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin: 0 5%;
+    }
+
+    section {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    main header {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    main img {
+        width: 22em;
+    }
+
+    .buttons {
+        margin: 0 20%;
+    }
+
+    main h2 {
+        width: 14.7em;
+        margin: auto;
+        margin-top: -1em;
+    }
+
+    main p{
+        width: 22em;
+        margin: auto;
+    }
+}
+
+/*Major breakpoint 2 */
+@media (min-width: 78em) {
+    body {
+        background-size: 100%
+    }
+
+    .allDownloads {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    .buttons {
+        margin: 0 30%;
+    }
+}

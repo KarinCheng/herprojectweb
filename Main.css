@@ -1,0 +1,731 @@
+@font-face {
+    font-family: 'nexa';
+    src: url(font/NexaBold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+*{
+    font-family: nexa;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+}
+
+/*Navigation*/
+nav {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+        margin: 0 1em 0 0;
+    }
+
+nav ul:last-child li:last-child {
+    margin-left: auto;
+}
+
+ul {
+    background: rgba(0,0,0,0.35);
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+}
+
+nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+
+ul:first-child {
+    background: white;
+    justify-content: space-between;
+}
+
+nav ul:first-child li:first-child img:hover {
+    content: url(img/HomeHover.png);
+}
+
+nav ul:first-child li:nth-child(3) img:hover {
+    content: url(img/LoginHover.png);
+}
+
+nav ul:last-child li:first-child img:hover {
+    content: url(img/FavorietHover.png);
+}
+
+nav ul:last-child li:nth-child(2) img:hover {
+    content: url(img/RecentHover.png);
+}
+
+nav ul:last-child li:nth-child(3) img:hover {
+    content: url(img/DownloadHover.png);
+}
+
+/*Search button*/
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 2.6em;
+    width: 9em;
+    font-size: 1em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: #8397ae solid 1px;
+    padding: 0 0 0 1em;
+    color: #666;
+}
+
+input:hover {
+    border: #1f1799 solid 1px;
+}
+
+input:focus {
+    border: #1f1799 solid 1px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    height: 4em;
+    width: 6em;
+    background: #1f1799;
+}
+
+.button:hover {
+    background: #5847b1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Home page*/
+main {
+    background: white;
+    margin: 2em 0
+}
+
+h1 {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    margin: 2em 0;
+    padding: 0 0 -6em 0;
+    text-shadow:  0 1px 0 #ccc,
+               0 2px 0 #666,
+               0 2px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+    font-size: 2em;
+    color: #67d082;
+    text-align: center;
+    margin: 0;
+    background: white;
+    padding: 1em 0 0 0;
+    line-height: 1.4em
+}
+
+section {
+    border: solid #ccc 1px;
+    border-radius: 0.5em;
+    margin: 2em 11%;
+}
+
+section header {
+    background: #67d082;;
+    border-radius: 0.5em 0.5em 0 0;
+    height: 9em;
+}
+
+section header {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.africa {
+    background-image: url(img/Africa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.asia {
+    background: #1f1799;
+    background-image: url(img/Asia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.centralEurope {
+    background: #ec486a;
+    background-image: url(img/Central%20Europe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.northEurope {
+    background-image: url(img/North%20Europe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eastEurope {
+    background: #1f1799;
+    background-image: url(img/East%20Europe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.westEurope {
+    background: #ec486a;
+    background-image: url(img/West%20Europe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.southEurope {
+    background-image: url(img/South%20Europe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background: white;
+    margin: 3.5em 0 3em 20%;
+    padding: 0;
+}
+
+section li {
+    margin: 0.4em 0;
+}
+
+h3 {
+    position: absolute;
+    font-size: 1.6em;
+    margin: 6.5em 0 0 10%;
+    color: #67d082;
+}
+
+.blue {
+    color: #1f1799;
+}
+
+.pink {
+    color: #ec486a;
+}
+
+section a:hover {
+    color: #ec486a;
+}
+
+/*Content form login*/
+.BGLogin {
+    background: #67d082;
+    margin: 9em 0 0 0;
+    padding: 3em 0 8.5em 0;
+}
+
+fieldset {
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: auto;
+    background: rgba(255,255,255,0.7);
+    padding: 1em;
+    height: 29em;
+}
+
+legend {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1.5em 0.5em;
+    color: #1f1799;
+    font-size: 1.7em;
+    background: white;
+    border-radius: 0.5em 0.5em 0 0;
+    width: 101%;
+}
+
+label {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 0 0.5em 1em;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:invalid {
+    border-color: #ce5542;
+}
+
+input:invalid +.requiredMessage {
+    padding: 0;
+    margin: 0.5em 0 0 0;
+    background: none;
+    display: block;
+    color: #ee6f6a;
+    font-size: 0.8em;
+}
+
+input:valid +.requiredMessage {
+    display: none;
+}
+
+fieldset a {
+    text-decoration: underline;
+    color: #1f1799;
+    margin: 1em 0 0 1.5em
+}
+
+fieldset a:hover {
+    color: #ec486a;
+}
+
+p a {
+    margin: 0;
+}
+
+fieldset input {
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    width: 90%;
+}
+
+fieldset p {
+    text-align: center;
+    background: white;
+    padding: 4em 2em 2em 2em;
+    margin: 3em -1em;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+/*Login button*/
+.login {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 1em auto;
+    background: #ec486a;
+    border: none;
+    border-radius: 4em;
+    color: white;
+    font-size: 1.4em;
+    width: 8em;
+    box-shadow: inset -2px -4px 10px 0px #bf3c59;
+}
+
+.login:hover {
+    border: none;
+    background: #ee708f;
+    box-shadow: #c0405c;
+}
+
+.login:focus {
+    border: none;
+}
+
+/*Afrika stories*/
+.AfricaBander {
+    background: url(img/BGAfrica.jpg) no-repeat;
+}
+
+.BGAfrica {
+    background: #f1e5da;
+    padding-bottom: 2em;
+    margin: 0;
+}
+
+.BundleInformation {
+    display: block;
+    width: 25em;
+    margin: 0 auto;
+}
+
+.BGAfrica p:first-child {
+    padding: 1.5em ;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.AfricaStories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AfricaStories button {
+    position: absolute;
+    margin: -9.8em 0 0 28.3em;
+    width: 3em;
+    height: 3em;
+    background: none;
+    border: solid 2px #67d082;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.bundleInfo {
+    color: #666;
+    font-size: 1em;
+    margin: -2.6em 1.8em;
+}
+
+.intoButton {
+    margin-left: 1.8em;
+}
+
+.intoButton .bundleButton {
+    margin: 5.5em 0.5em -2em 0;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+select {
+    margin-left: 1.5em;
+}
+
+.time select {
+    font-size: 1.2em;
+    height: 2em;
+    width: 10em;
+    margin: -2em 0 0 1.5em;
+}
+
+.bundleSection {
+    display: flex;
+    margin: 1em 0 0 0;
+    padding: 0;
+    width: 22em;
+    height: 9.5em;
+    background: white;
+    position: relative;
+}
+
+.bundleSection header {
+    background: none;
+}
+
+.storiesInfo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: -1em 0 0 8em;
+}
+
+.storiesInfo h2{
+    background: none;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.storiesInfo p {
+    font-size: 1em;
+    color: #666;
+    margin: 0.5em 0;
+    width: 13em;
+}
+
+.bundleButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid 2px #67d082;
+    border-radius: 0.5em;
+    background: none;
+    width: 5em;
+    height: 5em;
+}
+
+.bundleSection .bundleButton {
+    position: absolute;
+    margin: -8.7em 0 0 26.4em;
+}
+
+.pictureStory {
+    border-radius: 0.5em;
+    height: 7em;
+    width: 7em;
+    margin: 0.5em;
+}
+
+/*Download button Micro interaction*/
+.intoButton button:nth-child(2) {
+    margin: 5.5em 0.5em -2em 0;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid 2px #67d082;
+    border-radius: 0.5em;
+    background: linear-gradient(to left, #f1e5da 50%, #67d082 50%);
+    background-position: right top;
+    transition: all 0.5 ease-in;
+    background-size: 200% 100%;
+    transition: all 2s;
+}
+
+nav div {
+    position: absolute;
+    margin: -2.5em 0 0 1.5em;
+    transform: scale(2.5);
+    transition: all 0.1s;
+    transition-delay: 1.5s;
+}
+
+.Notification {
+    content: "";
+    width: 0.3em;
+    height: 0.3em;
+    background: #67d082;
+    position: absolute;
+    border-radius: 0.5em;
+}
+
+.intoButton button:nth-child(2).downloadButton{
+    background-position: left top;
+}
+
+.intoButton button:nth-child(2) img.animationIcon{
+    content: url(img/DownloadButton2.png);
+}
+
+/*Story*/
+.likeButton {
+    position: absolute;
+    right: 5em;
+    top: 1em;
+    z-index: 10;
+}
+
+.commentButton {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    z-index: 10;
+}
+
+.storySchoorsteen {
+    background: none;
+}
+
+.storyBreakpoint3 {
+    width: 100%;
+    display: block;
+}
+
+.storyBreakpoint2 {
+    width: 100%;
+    display: none;
+}
+
+.storyBreakpoint1 {
+    width: 100%;
+    display: none;
+}
+
+.Title {
+    position: absolute;
+    width: 100%;
+}
+
+.Title:hover {
+    content: url(img/SchoorsteenTitel.png);
+    margin-top: 0.2em;
+}
+
+/*Footer*/
+footer {
+    background: #f0f0f0;
+    padding: 1.5em 1.5em 1em 2em;
+}
+
+footer ul {
+    display: contents;
+}
+
+footer li:last-child {
+    margin: 0 0 1em;
+}
+
+footer a {
+    font-size: 0.7em;
+    color: #666;
+}
+
+footer a:hover {
+    color: #ec486a;
+}
+
+/*Major breakpoint 1 */
+@media (min-width: 36em) {
+
+    /*Home page*/
+    body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+    background-size: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin: 2em 11% 0 11%;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    section h3 {
+        margin: 6.5em 0 0 3%;
+    }
+
+    /*Login page*/
+    body {
+        margin: 0;
+        background: url(img/background.jpg) no-repeat;
+    }
+
+    fieldset {
+        width: 32em;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    legend {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    fieldset input {
+        width: 26.5em;
+    }
+
+    /*Africa bundle*/
+    .AfricaStories {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .BundleInformation {
+        width: 49em;
+        margin: auto;
+    }
+
+    /*Story*/
+    .storyBreakpoint3 {
+        display: none;
+    }
+
+    .storyBreakpoint2 {
+        display: block;
+    }
+
+    .storyBreakpoint1 {
+        display: none;
+    }
+}
+
+/*Major breakpoint 2 */
+@media (min-width: 71em) {
+    /*Home page*/
+    body {
+        margin: 0;
+        background: url(img/background.jpg) no-repeat;
+        background-size: 100%;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    section h3 {
+        margin: 6.5em 0 0 3%;
+    }
+
+    /*Login page*/
+    body {
+    margin: 0;
+    background: url(img/background.jpg) no-repeat;
+    background-size: 100%;
+    }
+
+    /*Africa bundle*/
+    .AfricaStories {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .BundleInformation {
+        width: 72em;
+    }
+
+    /*Story*/
+    .storyBreakpoint3 {
+        display: none;
+    }
+
+    .storyBreakpoint2 {
+        display: none;
+    }
+
+    .storyBreakpoint1 {
+        display: block;
+    }
+
+}
